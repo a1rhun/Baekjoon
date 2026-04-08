@@ -35,9 +35,8 @@ for i in range(n):
 
 # 출력
 print(len(apart))
-res = []
-for i in range(len(apart)):
-    res.append((len(apart[i+1])))
-res.sort()
+
+res = list(sorted(len(apart[i + 1]) for i in range(len(apart))))
+
 for i in res:
     print(i)
